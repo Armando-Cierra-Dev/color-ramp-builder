@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build:web"
+  publish = "dist"
+
+[build.environment]
+  BUILD_WEB = "true"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
