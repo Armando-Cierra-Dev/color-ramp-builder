@@ -11,7 +11,7 @@
   mac: {
     target: ['dmg'],
     artifactName: '${productName}-Mac-${version}-Installer.${ext}',
-    icon: 'public/isotype.icns',
+    icon: 'public/isotype-with-bg.icns',
   },
   win: {
     target: [
@@ -30,7 +30,12 @@
     deleteAppDataOnUninstall: true,
   },
   linux: {
-    target: ['AppImage'],
-    artifactName: '${productName}-Linux-${version}.${ext}',
+    target: [
+      {
+        target: 'AppImage',
+        arch: ['x64', 'arm64'],
+      },
+    ],
+    artifactName: '${productName}-Linux-${arch}-${version}.${ext}',
   },
 }
