@@ -9,6 +9,11 @@ The application is compatible with Windows, MacOS and Linux. Installers for the 
 ## Web Version
 A web version of the application is also available and can be accessed [here](https://color-ramp-builder.netlify.app/)
 
+## Screenshots
+<img src='./public/1.png' width="100%"/>
+<img src='./public/2.png' width="100%"/>
+<img src='./public/3.png' width="100%"/>
+
 ## Dependencies Used
 - [reactJS](https://react.dev/)
 - [typescript](https://www.typescriptlang.org/)
